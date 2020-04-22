@@ -1,0 +1,35 @@
+/*header*/
+li {
+    list-style-type: none;
+}
+
+/*main*/
+.main {
+    padding: 100px 80px;
+}
+
+
+/*about*/
+.about {
+    width: auto;
+    height: 300px;
+    background-color: green;
+}
+
+/*team*/
+.team {
+    width: auto;
+    height: 300px;
+    background-color: red;
+} 
+
+
+/*contact-form*/
+.contact-form {
+    width: auto;
+    height: 300px;
+    background-color: yellow;
+}
+
+/*footer*/
+
