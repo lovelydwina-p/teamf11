@@ -1,14 +1,17 @@
+
 * {
   box-sizing: border-box;
-}
-
-body{
+  list-style: none;
   margin: 0;
   padding: 0;
-  font-family: "montserrat";
+  outline: none;
 }
+
+/*=======================*/
+
 .team{
-  background: #f1f1f1;
+  height: 500px;
+  background: #dcdcdc;
   text-align: center;
 }
 .team-box{
@@ -37,6 +40,7 @@ body{
   /*border: 1px solid gray;*/
   height: 300px;
   position: relative;
+  border-radius: 8px;
 }
 
 .pe:hover {
@@ -91,6 +95,9 @@ body{
     margin-right: 2%;
     margin-bottom: 15px ;
   }
+  .team {
+    height: 1100px;
+  }
 }
 
 @media screen and (max-width:600px) {
@@ -98,5 +105,93 @@ body{
     width: 100%;
     margin-bottom: 15px;
   }
+  .team {
+    height: 1700px;
+  }
 }
 
+/* ========================= */
+@import url('https://font.googleapis.com/css?family=roboto');
+
+.message-wrapper {
+  top: 50%;
+  width: 100%;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+  background: url(https://prog-8.com/images/html/advanced/top_en.png);
+  background-size: cover;
+}
+
+.message-wrapper h2 {
+  opacity: 0.7;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.contact-form {
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0,0,0,0.13);
+}
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields,
+.msg {
+  width: 48%;
+}
+.input-fields .input,
+.msg textarea {
+  margin: 10px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #629fb9;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%; 
+  font-family: 'Roboto', sans-serif;
+}
+.msg textarea {
+  height: 212px;
+}
+::-webkit-input-placeholder {
+  color: #c5ecfd;
+}
+::-moz-input-placeholder {
+  color: #c5ecfd;
+}
+::-ms-input-placeholder {
+  color: #c5ecfd;
+}
+
+.btn {
+  background: #39b7dd;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color:#fff ;
+  cursor: pointer;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    flex-direction: column;
+  }
+  .input-fields,
+  .msg {
+    width: 100%;
+  }
+}
